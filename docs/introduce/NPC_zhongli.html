@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="..">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>游戏介绍 - NPC_zhongli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/article.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/article.css">
+
+    <script src="./js/jquery.gototop.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- 图标 -->
+            <div class="navbar-header">
+                <a href="./index.html">
+                    <img src="./img/logo.png" id="logo" alt="首页">
+                </a>
+            </div>
+            <!-- 导航目录 -->
+            <div>
+                <ul class="nav navbar-nav">
+                    <li id="index">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li id="introduce" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏介绍
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./introduce/bcground.html">游戏背景</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/experience.html">游戏历程</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/major.html">NPC</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/map.html">场景地图</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/honor.html">历史荣耀</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/system.html">特色系统</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/congigure.html">系统配置</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="explore" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            深入探索
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./explore/world.html">世界生成</a>
+                            </li>
+                            <li>
+                                <a href="./explore/ecosystem.html">生物群系</a>
+                            </li>
+                            <li>
+                                <a href="./explore/noise.html">噪声函数</a>
+                            </li>
+                            <li>
+                                <a href="./explore/terrain.html">基本地形</a>
+                            </li>
+                            <li>
+                                <a href="./explore/cave.html">洞穴</a>
+                            </li>
+                            <li>
+                                <a href="./explore/explode.html">爆炸算法</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="strategy" class="dropdown">
+                        <a href="./strategy.html" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏攻略
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./strategy/basempl.html">基本操作</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/sourceuse.html">材质包使用教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/skin.html">皮肤替换教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/modstall.html">MOD安装教程</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="about" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            关于我们
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./about/video.html">小组视频</a>
+                            </li>
+                            <li>
+                                <a href="./about/member.html">我们的话</a>
+                            </li>
+                            <li>
+                                <a href="./about/login.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $('#introduce').addClass('active')
+        </script>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div id="sidebar">
+                    <!-- generated from markdown -->
+                    <ul>
+                        <li><a href="#%E4%B8%AD%E7%AB%8B%E5%9E%8B%E7%94%9F%E7%89%A9">1. 中立型生物</a></li>
+                        <ul>
+                            <li><a href="#%E6%B4%9E%E7%A9%B4%E8%9C%98%E8%9B%9B">1.1. 洞穴蜘蛛</a></li>
+                            <li><a href="#%E5%83%B5%E5%B0%B8%E7%8C%AA%E4%BA%BA">1.2. 僵尸猪人</a></li>
+                            <li><a href="#%E9%93%81%E5%82%80%E5%84%A1">1.3. 铁傀儡</a></li>
+                            <li><a href="#%E6%B5%B7%E8%B1%9A">1.4. 海豚</a></li>
+                            <li><a href="#%E6%9C%AB%E5%BD%B1%E4%BA%BA">1.5. 末影人</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div id="content_border">
+                    <div id="content_border_top">
+                        <div id="content_border_lefttop"></div>
+                        <div id="content_border_centertop"></div>
+                        <div id="content_border_righttop"></div>
+                    </div>
+                    <div id="content_border_left">
+                        <div id="content_border_right">
+                            <div class="content">
+                                <br />
+                                <!-- generated from markdown -->
+                                <h1 id="%E4%B8%AD%E7%AB%8B%E5%9E%8B%E7%94%9F%E7%89%A9"><a href="#%E4%B8%AD%E7%AB%8B%E5%9E%8B%E7%94%9F%E7%89%A9" class="anchor"></a>中立型生物</h1>
+                                <h2 id="%E6%B4%9E%E7%A9%B4%E8%9C%98%E8%9B%9B"><a href="#%E6%B4%9E%E7%A9%B4%E8%9C%98%E8%9B%9B" class="anchor"></a>洞穴蜘蛛</h2>
+                                <p><em>洞穴蜘蛛是一种能够造成玩家中毒的中立型生物</em></p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>12（★★★★★★）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>护甲值</td>
+                                            <td>--</td>
+                                            <td><img src="./img/225px-Blue_Spider_2.png" alt="僵尸1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>简单2（★）<br />普通2（★）<br />困难3（★☆）<br /><b>毒液：</b>1/1.5s<br />困难：持续15秒<br />普通：持续7秒</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>掉落物</td>
+                                            <td>线（常见）<br />蜘蛛眼（33.3%）被玩家杀死时</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>5</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E5%83%B5%E5%B0%B8%E7%8C%AA%E4%BA%BA"><a href="#%E5%83%B5%E5%B0%B8%E7%8C%AA%E4%BA%BA" class="anchor"></a>僵尸猪人</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>20(★★★★★★★★★★)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>护甲值</td>
+                                            <td>2</td>
+                                            <td><img src="./img/118px-Baby_Zombie_Pigman.png" alt="僵尸猪人"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>简单：5(★★☆)<br />普通：9（★★★★☆）<br />困难：13（★★★★★★☆）</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>●下界任何两格高的地方<br />●主世界有猪在闪电击中的地面3-4格附近<br />●主世界的下界传送门旁</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>天然装备</td>
+                                            <td>金剑<br />南瓜灯<br />南瓜<br /></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>成年：5<br />小僵尸猪人：12</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E9%93%81%E5%82%80%E5%84%A1"><a href="#%E9%93%81%E5%82%80%E5%84%A1" class="anchor"></a>铁傀儡</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>100(★×50)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>7(★★★☆)至21（★★★★★★★★★★☆）</td>
+                                            <td><img src="./img/225px-Village_Golem.png" alt="铁傀儡"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>成群的10个村民、21个门附近的任何亮度等级的地方<br />当南瓜、雕刻过的南瓜或南瓜灯放置在4个铁块上时</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>常见掉落物</td>
+                                            <td>铁锭（3-5）<br />虞美人（0-2）</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>0</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E6%B5%B7%E8%B1%9A"><a href="#%E6%B5%B7%E8%B1%9A" class="anchor"></a>海豚</h2>
+                                <p><em>海豚，是一种非常喜欢玩耍的生物</em></p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>10（★★★★★）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td><b>简单：2(★)<br /><b>普通：</b>3（★☆）<br /><b>困难：</b>4(★★)</td>
+                                            <td><img src="./img/225px-Dolphin.png" alt="海豚"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>常见掉落物</td>
+                                            <td>生鳕鱼</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>0</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E6%9C%AB%E5%BD%B1%E4%BA%BA"><a href="#%E6%9C%AB%E5%BD%B1%E4%BA%BA" class="anchor"></a>末影人</h2>
+                                <p><em>末影人通常在下界和末地，在主世界它是非常罕见的。曾经与他的眼神接触然后幸存下来讲故事的人越来越少了</em></p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>40（★×20)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>简单：4（★★）<br />普通：7（★★★☆）<br />困难：10（★★★★★)</td>
+                                            <td><img src="./img/159px-Enderman.png" alt="末影人"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>体型</td>
+                                            <td>高度：2.9格<br />宽度：0.6格</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>主世界，下界或末路之地的亮度在7以及7以下的固体方块上</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>5</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                <div class="align-justify">
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/NPC_chuanshuo.html">
+                                            <img src="./img/qianfan2.png" alt="上一页" title="上一页" width="50">
+                                        </a>
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/major.html">
+                                            <img src="./img/huizhuye2.png" alt="返回NPC页面" title="返回NPC页面" width="100">
+                                        </a>
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/NPC_xiaoyong.html">
+                                            <img src="./img/fanye2.png" alt="下一页" title="下一页" width="50">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content_border_bottom">
+                        <div id="content_border_leftbottom"></div>
+                        <div id="content_border_centerbottom"></div>
+                        <div id="content_border_rightbottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*背景图片*/
+
+        body {
+            background: url(img/guangtou.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <!--返回顶部按钮-->
+
+    <button class="gototop" title="返回顶部">
+        <img src="./img/box.gif">
+    </button>
+
+    <script type="text/javascript">
+        $(function() {
+            // $(".gototop").gototop();
+            $(".gototop").gototop({
+                position: 0,
+                duration: 1250,
+                visibleAt: 300,
+                classname: "isvisible"
+            });
+        });
+    </script>
+    <div class="footer">
+        <br>
+        <p>Copyright © 2018 Badcamp 联系QQ群：869679790 联系电话：18811792366
+            <a href="./about/member.html">关于我们</a>
+        </p>
+        <p>免责声明：本站部分内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知，站长会立即处理。<br> 站内所有资源仅供学习与参考，请勿用于商业用途，否则产生的一切后果将由您自己承担！
+        </p>
+        <p>参考资料:minecraft官网 Google Baidu</p>
+    </div>
+</body>
+
+</html>

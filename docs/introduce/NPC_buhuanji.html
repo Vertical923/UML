@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="..">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>游戏介绍 - NPC_buhuanji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/article.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/article.css">
+
+    <script src="./js/jquery.gototop.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- 图标 -->
+            <div class="navbar-header">
+                <a href="./index.html">
+                    <img src="./img/logo.png" id="logo" alt="首页">
+                </a>
+            </div>
+            <!-- 导航目录 -->
+            <div>
+                <ul class="nav navbar-nav">
+                    <li id="index">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li id="introduce" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏介绍
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./introduce/bcground.html">游戏背景</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/experience.html">游戏历程</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/major.html">NPC</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/map.html">场景地图</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/honor.html">历史荣耀</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/system.html">特色系统</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/congigure.html">系统配置</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="explore" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            深入探索
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./explore/world.html">世界生成</a>
+                            </li>
+                            <li>
+                                <a href="./explore/ecosystem.html">生物群系</a>
+                            </li>
+                            <li>
+                                <a href="./explore/noise.html">噪声函数</a>
+                            </li>
+                            <li>
+                                <a href="./explore/terrain.html">基本地形</a>
+                            </li>
+                            <li>
+                                <a href="./explore/cave.html">洞穴</a>
+                            </li>
+                            <li>
+                                <a href="./explore/explode.html">爆炸算法</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="strategy" class="dropdown">
+                        <a href="./strategy.html" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏攻略
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./strategy/basempl.html">基本操作</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/sourceuse.html">材质包使用教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/skin.html">皮肤替换教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/modstall.html">MOD安装教程</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="about" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            关于我们
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./about/video.html">小组视频</a>
+                            </li>
+                            <li>
+                                <a href="./about/member.html">我们的话</a>
+                            </li>
+                            <li>
+                                <a href="./about/login.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $('#introduce').addClass('active')
+        </script>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div id="sidebar">
+                    <!-- generated from markdown -->
+                    <ul>
+                        <li><a href="#%E8%A2%AB%E5%8A%A8%E5%9E%8B%E7%94%9F%E7%89%A9">1. 被动型生物</a></li>
+                        <ul>
+                            <li><a href="#%E8%9D%99%E8%9D%A0%EF%BC%88%E6%9C%AC%E6%B8%B8%E6%88%8F%E7%AC%AC%E5%9B%9B%E5%B0%8F%E7%9A%84%E7%94%9F%E7%89%A9%EF%BC%89">1.1. 蝙蝠（本游戏第四小的生物）</a></li>
+                            <li><a href="#%E9%B8%A1">1.2. 鸡</a></li>
+                            <li><a href="#%E5%93%9E%E8%8F%87">1.3. 哞菇</a></li>
+                            <li><a href="#%E7%8C%AA">1.4. 猪</a></li>
+                            <li><a href="#%E5%85%94%E5%AD%90">1.5. 兔子</a></li>
+                            <li><a href="#%E9%A9%AC">1.6. 马</a></li>
+                            <li><a href="#%E9%B1%BF%E9%B1%BC">1.7. 鱿鱼</a></li>
+                            <li><a href="#%E6%B5%B7%E9%BE%9F">1.8. 海龟</a></li>
+                            <li><a href="#%E6%9D%91%E6%B0%91">1.9. 村民</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div id="content_border">
+                    <div id="content_border_top">
+                        <div id="content_border_lefttop"></div>
+                        <div id="content_border_centertop"></div>
+                        <div id="content_border_righttop"></div>
+                    </div>
+                    <div id="content_border_left">
+                        <div id="content_border_right">
+                            <div class="content">
+                                <br />
+                                <!-- generated from markdown -->
+                                <h1 id="%E8%A2%AB%E5%8A%A8%E5%9E%8B%E7%94%9F%E7%89%A9"><a href="#%E8%A2%AB%E5%8A%A8%E5%9E%8B%E7%94%9F%E7%89%A9" class="anchor"></a>被动型生物</h1>
+                                <h2 id="%E8%9D%99%E8%9D%A0%EF%BC%88%E6%9C%AC%E6%B8%B8%E6%88%8F%E7%AC%AC%E5%9B%9B%E5%B0%8F%E7%9A%84%E7%94%9F%E7%89%A9%EF%BC%89"><a href="#%E8%9D%99%E8%9D%A0%EF%BC%88%E6%9C%AC%E6%B8%B8%E6%88%8F%E7%AC%AC%E5%9B%9B%E5%B0%8F%E7%9A%84%E7%94%9F%E7%89%A9%EF%BC%89"
+                                        class="anchor"></a>蝙蝠（本游戏第四小的生物）</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>6(★★★)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>体型</td>
+                                            <td>高度：0.9方格<br />宽度：0.5方格</td>
+                                            <td><img src="./img/Bat.gif" alt="蝙蝠"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>63层以下<br />临近方块亮度低于4<br />10月20日至11月13日：临近方块亮度小于等于6</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>掉落物</td>
+                                            <td>无</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>0</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E9%B8%A1"><a href="#%E9%B8%A1" class="anchor"></a>鸡</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>4(★★)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>固体方块表面上方至少有两格的空间，通过投掷鸡蛋腐化（1/8的概率）</td>
+                                            <td><img src="./img/150px-Baby_Chicken.png" alt="鸡"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>杀死成年鸡：1-3<br />繁殖：1-7<br /></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E5%93%9E%E8%8F%87"><a href="#%E5%93%9E%E8%8F%87" class="anchor"></a>哞菇</h2>
+                                <p><i>哞菇：牛的独特变种</i></p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>10(★★★★★)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>体型</td>
+                                            <td><b>成年个体：</b>高度：1.4方块<br />宽度：0.9方块<br /><b>幼年个体：</b>高度：0.7方块<br />宽度：0.45方块</td>
+                                            <td><img src="./img/225px-Mooshroom.png" alt="哞菇"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>蘑菇岛</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>杀死成年哞菇：1-3<br />繁殖：1-7</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E7%8C%AA"><a href="#%E7%8C%AA" class="anchor"></a>猪</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>10(★★★★★)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>上方至少有2×2空间的非透明方块上</td>
+                                            <td><img src="./img/149px-Baby_Pig.png" alt="猪"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>常见掉落物</td>
+                                            <td>生猪肉（1-3）未着火时<br />烤猪肉（1-3）着火时</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>可使用物品</td>
+                                            <td>鞍</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>杀死成年猪：1-3<br />繁殖：1-7</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E5%85%94%E5%AD%90"><a href="#%E5%85%94%E5%AD%90" class="anchor"></a>兔子</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>3(★★☆)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>护甲值</td>
+                                            <td><b>仅杀手兔：</b>8</td>
+                                            <td><img src="./img/120px-Sand_Baby_Rabbit.png" alt="兔子"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td><b>仅杀手兔：</b><br />简单：5（★★☆）<br />普通：8（★★★★）<br />困难：12（★★★★★★）</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>常见掉落物</td>
+                                            <td>兔子皮<br />生兔肉（未着火时）<br />熟兔肉（着火时）</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>稀有掉落物</td>
+                                            <td>兔子脚</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>杀死成年兔：1-3<br />繁殖：1-4</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E9%A9%AC"><a href="#%E9%A9%AC" class="anchor"></a>马</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>15(★★★★☆)-30（★×15）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>体型</td>
+                                            <td><b>成年：<br />高：1.6方块<br />宽度：1.397方块<br /><b>幼年：</b>高：0.8方块<br />宽度：0.698方块</td>
+                                            <td><img src="./img/300px-Skeletonhorse.png" alt="马"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>草原和热带草原</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>常见掉落物</td>
+                                            <td>皮革（正常）<br />骨头(骷髅马)<br />腐肉（僵尸马）</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>可使用物品</td>
+                                            <td>鞍<br />马铠<br />箱子</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>杀死成年马：1-3<br />繁殖:1-7</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E9%B1%BF%E9%B1%BC"><a href="#%E9%B1%BF%E9%B1%BC" class="anchor"></a>鱿鱼</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>10(★★★★★）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>至少一格水，任意亮度，出生所在方块高度必须在45（包含）到海平面之间</td>
+                                            <td><img src="./img/225px-Squid.png" alt="鱿鱼"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>掉落物</td>
+                                            <td>墨囊</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>1-3</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E6%B5%B7%E9%BE%9F"><a href="#%E6%B5%B7%E9%BE%9F" class="anchor"></a>海龟</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>30(★×15)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>体型</td>
+                                            <td><b>成年：</b><br />高度：0.4方块<br />宽度：1.2方块<br /><b>幼年：</b>高度：0.12方块<br />宽度：0.36方块</td>
+                                            <td><img src="./img/360px-Turtle.png" alt="海龟"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>温暖海滩</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>掉落物</td>
+                                            <td>海草</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>杀死成年海龟：1-3<br />繁殖：1-7</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 id="%E6%9D%91%E6%B0%91"><a href="#%E6%9D%91%E6%B0%91" class="anchor"></a>村民</h2>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>20(★★★★★★★★★★)</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>无</td>
+                                            <td><img src="./img/204px-Librarian_villager.png" alt="村民"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>体型</td>
+                                            <td><b>成年：</b><br />高度：1.95方块<br />宽度：0.6方块<br /><b>幼体：</b><br />高度：0.975方块<br />宽度：0.3方块</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>村庄<br />当治愈了一个僵尸村民时</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>掉落物</td>
+                                            <td>无</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td><b>交易：</b>3-6<br /><b>在有意愿时交易：</b>8-11</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+
+                                <div class="align-justify">
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/NPC_kexun.html">
+                                            <img src="./img/qianfan2.png" alt="上一页" title="上一页" width="50">
+                                        </a>
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/major.html">
+                                            <img src="./img/huizhuye2.png" alt="返回NPC页面" title="返回NPC页面" width="100">
+                                        </a>
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <a onclick="return alert('您已经在最后一页了哦！');" href="javascript:;">
+                                            <img src="./img/fanye2.png" alt="下一页" title="下一页" width="50">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content_border_bottom">
+                        <div id="content_border_leftbottom"></div>
+                        <div id="content_border_centerbottom"></div>
+                        <div id="content_border_rightbottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*背景图片*/
+
+        body {
+            background: url(img/guangtou.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <!--返回顶部按钮-->
+
+    <button class="gototop" title="返回顶部">
+        <img src="./img/box.gif">
+    </button>
+
+
+    <script type="text/javascript">
+        $(function() {
+            // $(".gototop").gototop();
+            $(".gototop").gototop({
+                position: 0,
+                duration: 1250,
+                visibleAt: 300,
+                classname: "isvisible"
+            });
+        });
+    </script>
+    <div class="footer">
+        <br>
+        <p>Copyright © 2018 Badcamp 联系QQ群：869679790 联系电话：18811792366
+            <a href="./about/member.html">关于我们</a>
+        </p>
+        <p>免责声明：本站部分内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知，站长会立即处理。<br> 站内所有资源仅供学习与参考，请勿用于商业用途，否则产生的一切后果将由您自己承担！
+        </p>
+        <p>参考资料:minecraft官网 Google Baidu</p>
+    </div>
+</body>
+
+</html>

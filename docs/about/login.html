@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="..">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>关于我们 - 我们的话</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/article.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/article.css">
+
+    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- 图标 -->
+            <div class="navbar-header">
+                <a href="./index.html">
+                    <img src="./img/logo.png" id="logo" alt="首页">
+                </a>
+            </div>
+            <!-- 导航目录 -->
+            <div>
+                <ul class="nav navbar-nav">
+                    <li id="index">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li id="introduce" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏介绍
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./introduce/bcground.html">游戏背景</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/experience.html">游戏历程</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/major.html">NPC</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/map.html">场景地图</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/honor.html">历史荣耀</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/system.html">特色系统</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/congigure.html">系统配置</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="explore" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            深入探索
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./explore/world.html">世界生成</a>
+                            </li>
+                            <li>
+                                <a href="./explore/ecosystem.html">生物群系</a>
+                            </li>
+                            <li>
+                                <a href="./explore/noise.html">噪声函数</a>
+                            </li>
+                            <li>
+                                <a href="./explore/terrain.html">基本地形</a>
+                            </li>
+                            <li>
+                                <a href="./explore/cave.html">洞穴</a>
+                            </li>
+                            <li>
+                                <a href="./explore/explode.html">爆炸算法</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="strategy" class="dropdown">
+                        <a href="./strategy.html" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏攻略
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./strategy/basempl.html">基本操作</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/sourceuse.html">材质包使用教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/skin.html">皮肤替换教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/modstall.html">MOD安装教程</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="about" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            关于我们
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./about/video.html">小组视频</a>
+                            </li>
+                            <li>
+                                <a href="./about/member.html">我们的话</a>
+                            </li>
+                            <li>
+                                <a href="./about/login.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $('#about').addClass('active')
+    </script>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content_border">
+                    <div id="content_border_top">
+                        <div id="content_border_lefttop"></div>
+                        <div id="content_border_centertop"></div>
+                        <div id="content_border_righttop"></div>
+                    </div>
+                    <div id="content_border_left">
+                        <div id="content_border_right">
+                            <div class="content">
+                                &nbsp;
+                                <img src="./img/register.jpg" id="form_img">
+                                <form autocomplete="off">
+                                    <fieldset>
+                                        <legend>注册:</legend>
+                                        <label for="usename">您的账号：</label>
+                                        <input type="text" id="usename" maxlength="10" placeholder="请输入用户名"><br />
+                                        <p>不超过10位,同时为了好记请不要使用奇怪字符</p>
+                                        <label for="password">您的密码：</label>
+                                        <input type="password" id="password" maxlength="8" placeholder="请输入8位密码"><br />
+                                        <label for="check">确认密码：</label>
+                                        <input type="password" id="check" maxlength="8" placeholder="请确认密码"><br />
+                                        <label for="sex">性别：　　</label>
+                                        <input type="radio" name="sex" id="male" checked="Ture" value="男">&nbsp
+                                        <label for="male">男</label>&nbsp
+                                        <input type="radio" name="sex" id="female" value="女">&nbsp
+                                        <label for="female">女</label>
+                                        <br />
+                                        <label for="like">你喜欢游戏的哪方面？</label><br />
+                                        <input type="checkbox" name="good" id="free" value="玩法自由度高">&nbsp
+                                        <label for="free">玩法自由度高</label>
+                                        <br />
+                                        <input type="checkbox" name="good" id="scene" value="地图场景优美">&nbsp
+                                        <label for="scene">地图场景优美</label>
+                                        <br />
+                                        <input type="checkbox" name="good" id="interaction" value="多人互动">&nbsp
+                                        <label for="interaction">多人互动</label>
+                                        <br />
+                                        <input type="checkbox" name="good" id="map" value="多地图探索">&nbsp
+                                        <label for="map">多地图探索</label>
+                                        <br />
+                                        <label for="others">其他：</label>
+                                        <input type="textarea" name="good" id="others"><br />
+                                        <label for="game">你最喜欢以下那款游戏？</label><br />
+                                        <select id="game">
+                                            <option selected="selected" value="MineCraft">MineCraft</option>
+                                            <option value="英雄联盟">英雄联盟</option>
+                                            <option value="守望先锋">守望先锋</option>
+                                            <option value="炉石传说">炉石传说</option>
+                                            <option value="三国杀">三国杀</option>
+                                            <option value="斗地主">斗地主</option>
+                                        </select><br />
+                                        <label for="text">对我们的网页有哪些建议：</label>
+                                        <textarea cols="36" rows="8" id="text" style="resize: none;"></textarea><br />
+                                        <input type="button" value="提交" onclick="get()">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="content_border_bottom">
+                            <div id="content_border_leftbottom"></div>
+                            <div id="content_border_centerbottom"></div>
+                            <div id="content_border_rightbottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*背景图片*/
+
+        body {
+            background: url(./img/bg2.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <div class="footer">
+        <br>
+        <p>Copyright © 2018 Badcamp 联系QQ群：869679790 联系电话：18811792366
+            <a href="./about/member.html">关于我们</a>
+        </p>
+        <p>免责声明：本站部分内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知，站长会立即处理。<br> 站内所有资源仅供学习与参考，请勿用于商业用途，否则产生的一切后果将由您自己承担！
+        </p>
+        <p>参考资料:minecraft官网 Google Baidu</p>
+    </div>
+
+</body>
+
+</html>

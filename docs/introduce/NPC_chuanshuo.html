@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="..">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>游戏介绍 - NPC_chuanshuo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/article.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/article.css">
+
+    <script src="./js/jquery.gototop.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- 图标 -->
+            <div class="navbar-header">
+                <a href="./index.html">
+                    <img src="./img/logo.png" id="logo" alt="首页">
+                </a>
+            </div>
+            <!-- 导航目录 -->
+            <div>
+                <ul class="nav navbar-nav">
+                    <li id="index">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li id="introduce" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏介绍
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./introduce/bcground.html">游戏背景</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/experience.html">游戏历程</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/major.html">NPC</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/map.html">场景地图</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/honor.html">历史荣耀</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/system.html">特色系统</a>
+                            </li>
+                            <li>
+                                <a href="./introduce/congigure.html">系统配置</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="explore" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            深入探索
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./explore/world.html">世界生成</a>
+                            </li>
+                            <li>
+                                <a href="./explore/ecosystem.html">生物群系</a>
+                            </li>
+                            <li>
+                                <a href="./explore/noise.html">噪声函数</a>
+                            </li>
+                            <li>
+                                <a href="./explore/terrain.html">基本地形</a>
+                            </li>
+                            <li>
+                                <a href="./explore/cave.html">洞穴</a>
+                            </li>
+                            <li>
+                                <a href="./explore/explode.html">爆炸算法</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="strategy" class="dropdown">
+                        <a href="./strategy.html" class="dropdown-toggle" data-toggle="dropdown">
+                            游戏攻略
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./strategy/basempl.html">基本操作</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/sourceuse.html">材质包使用教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/skin.html">皮肤替换教程</a>
+                            </li>
+                            <li>
+                                <a href="./strategy/modstall.html">MOD安装教程</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="about" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            关于我们
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./about/video.html">小组视频</a>
+                            </li>
+                            <li>
+                                <a href="./about/member.html">我们的话</a>
+                            </li>
+                            <li>
+                                <a href="./about/login.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $('#introduce').addClass('active')
+        </script>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div id="sidebar">
+                    <!-- generated from markdown -->
+                    <ul>
+                        <li><a href="#%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E7%94%9F%E7%89%A9">1. 传说中的生物</a></li>
+                        <li><a href="#%E5%87%8B%E7%81%B5">2. 凋灵</a></li>
+                        <li><a href="#%E6%9C%AB%E5%BD%B1%E9%BE%99">3. 末影龙</a></li>
+                        <li><a href="#%E8%BF%9C%E5%8F%A4%E5%AE%88%E5%8D%AB%E8%80%85">4. 远古守卫者</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div id="content_border">
+                    <div id="content_border_top">
+                        <div id="content_border_lefttop"></div>
+                        <div id="content_border_centertop"></div>
+                        <div id="content_border_righttop"></div>
+                    </div>
+                    <div id="content_border_left">
+                        <div id="content_border_right">
+                            <div class="content">
+                                <br />
+                                <!-- generated from markdown -->
+                                <h1 id="%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E7%94%9F%E7%89%A9"><a href="#%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E7%94%9F%E7%89%A9" class="anchor"></a>传说中的生物</h1>
+                                <h3 id="%E5%87%8B%E7%81%B5"><a href="#%E5%87%8B%E7%81%B5" class="anchor"></a>凋灵</h3>
+                                <p><em>“快给自己合成尿布吧，朋友。”————凋灵</em></p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>300（★×150）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>护甲值</td>
+                                            <td>4(★★)</td>
+                                            <td><img src="./img/diaoling.png" alt="凋灵"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>简单：5（★★☆）<br />普通：8（★★★★）<br />困难：12（★★★★★★）<br />冲刺：15(★★★★★★★☆)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>被玩家创造</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>掉落物</td>
+                                            <td>下界之星</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td>50</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3 id="%E6%9C%AB%E5%BD%B1%E9%BE%99"><a href="#%E6%9C%AB%E5%BD%B1%E9%BE%99" class="anchor"></a>末影龙</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>200（★×100）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>护甲值</td>
+                                            <td>---</td>
+                                            <td><img src="./img/moyinglong.gif" alt="末影龙"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>和平：0<br />简单：6（★★★）<br />普通：10（★★★★★）<br />困难：15（★★★★★★★☆）<br />龙息攻击：半秒后6（★★★）<br />爆炸火球攻击：半秒后12(★★★★★★)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>末路之地</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td><strong>第一次：</strong>12,000<br /><strong>重生后：</strong>500</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3 id="%E8%BF%9C%E5%8F%A4%E5%AE%88%E5%8D%AB%E8%80%85"><a href="#%E8%BF%9C%E5%8F%A4%E5%AE%88%E5%8D%AB%E8%80%85" class="anchor"></a>远古守卫者</h3>
+                                <p><em>……即使這樣，你也無法獲得海底遺蹟的資源——潛伏的遠古深海守衛會將挖掘減速施加於你身上，使你無力舉起手中的鎬。”————Marsh Davies</em></p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>生命值</th>
+                                            <th>80（★×40）</th>
+                                            <th>图片</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>护甲值</td>
+                                            <td>---</td>
+                                            <td><img src="./img/yuangushouweizhe.png" alt="远古守卫者"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>攻击力</td>
+                                            <td>和平：0<br />简单：6（★★★）<br />普通：10（★★★★★）<br />困难：15（★★★★★★★☆）<br />龙息攻击：半秒后6（★★★）<br />爆炸火球攻击：半秒后12(★★★★★★)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>生成于</td>
+                                            <td>末路之地</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>经验值</td>
+                                            <td><strong>第一次：</strong>12,000<br /><strong>重生后：</strong>500</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                <div class="align-justify">
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/NPC_gongji.html">
+                                            <img src="./img/qianfan2.png" alt="上一页" title="上一页" width="50">
+                                        </a>
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/major.html">
+                                            <img src="./img/huizhuye2.png" alt="返回NPC页面" title="返回NPC页面" width="100">
+                                        </a>
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <a href="./introduce/NPC_zhongli.html">
+                                            <img src="./img/fanye2.png" alt="下一页" title="下一页" width="50">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content_border_bottom">
+                        <div id="content_border_leftbottom"></div>
+                        <div id="content_border_centerbottom"></div>
+                        <div id="content_border_rightbottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /*背景图片*/
+
+        body {
+            background: url(img/guangtou.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <!--返回顶部按钮-->
+
+    <button class="gototop" title="返回顶部">
+        <img src="./img/box.gif">
+    </button>
+
+
+    <script type="text/javascript">
+        $(function() {
+            // $(".gototop").gototop();
+            $(".gototop").gototop({
+                position: 0,
+                duration: 1250,
+                visibleAt: 300,
+                classname: "isvisible"
+            });
+        });
+    </script>
+    <div class="footer">
+        <br>
+        <p>Copyright © 2018 Badcamp 联系QQ群：869679790 联系电话：18811792366
+            <a href="./about/member.html">关于我们</a>
+        </p>
+        <p>免责声明：本站部分内容来源于互联网。如果本站部分内容侵犯您的权益，请您告知，站长会立即处理。<br> 站内所有资源仅供学习与参考，请勿用于商业用途，否则产生的一切后果将由您自己承担！
+        </p>
+        <p>参考资料:minecraft官网 Google Baidu</p>
+    </div>
+</body>
+
+</html>
